@@ -59,7 +59,7 @@ def main():
             tax_rate = 0.0725
 
 
-        commission = gross * tax_rate
+        commission = gross(gross * tax_rate)
         input('The gross pay is generally calculated by multiplying the agent rate and the endorsement amount (press enter to confirm)')
         print('The gross pay is $',
               format(gross, ',.2f'), sep='')
